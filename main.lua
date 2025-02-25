@@ -6,7 +6,7 @@ function M:peek(job)
 		'-f',
 		'symbols',
 		'--animate',
-		'false'
+		'false',
 		'-s',
 		tostring(job.area.w .. 'x' .. job.area.h),
 		tostring(job.file.url),
