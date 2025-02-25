@@ -5,6 +5,8 @@ function M:peek(job)
 	    :args({
 		'-f',
 		'symbols',
+		'--animate',
+		'false'
 		'-s',
 		tostring(job.area.w .. 'x' .. job.area.h),
 		tostring(job.file.url),
