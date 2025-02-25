@@ -2,13 +2,13 @@
 
 A yazi plugin to deliberately preview images with chafa symbols. Yazi's image previewer cannot fallback to chafa properly in some use cases. For example, when running with alacritty and sway, only ueberzugpp preview is allowed.
 
-## installation
+## Installation
 
 ```
 ya pack --add kuokuo123/chafa-symbol
 ```
 
-## setup
+## Usage
 
 Append the below block to ~/.config/yazi/yazi.toml
 
