@@ -14,7 +14,7 @@ function M:peek(job)
 	    :spawn()
 
 	if not child then
-		return require("chafa-symbol"):peek(job)
+		return require("code"):peek(job)
 	end
 
 	local limit = job.area.h
@@ -22,7 +22,7 @@ function M:peek(job)
 	repeat
 		local next, event = child:read_line()
 		if event == 1 then
-			return require("chafa-symbol"):peek(job)
+			return require("code"):peek(job)
 		elseif event ~= 0 then
 			break
 		end
@@ -42,6 +42,6 @@ function M:peek(job)
 	end
 end
 
-function M:seek(job) require("chafa-symbol"):seek(job) end
+function M:seek(job) require("code"):seek(job) end
 
 return M
